@@ -1,0 +1,55 @@
+parse_document:
+  description: >
+    Extract and clean architecture details from the uploaded document located at {file_path}.
+  expected_output: >
+    A structured architecture description.
+
+architecture_review:
+  description: >
+    Analyze the architecture using TOGAF and cloud best practices.
+  expected_output: >
+    Detailed architecture assessment.
+
+security_review:
+  description: >
+    Identify vulnerabilities and map them to NDPR, ISO 27001, and OWASP.
+  expected_output: >
+    Security findings with regulatory references.
+
+compliance_review:
+  description: >
+    Evaluate compliance with NDPR and CBN guidelines.
+  expected_output: >
+    Compliance gaps with explicit clause references.
+
+devops_review:
+  description: >
+    Assess deployment, scalability, and reliability.
+  expected_output: >
+    Infrastructure and DevOps assessment.
+
+gap_analysis:
+  description: >
+    Identify gaps and recommend fixes with severity levels.
+  expected_output: >
+    List of gaps and recommendations.
+
+final_report:
+  description: >
+    Generate a comprehensive report including all findings.
+    Use the generate_report tool to save the report to the output file `{output_name}`.
+
+    Your final answer MUST follow this structure:
+    1. Executive Summary
+    2. Architecture Overview
+    3. Detailed Technical Assessment
+    4. Security Assessment (NDPR, ISO 27001)
+    5. Compliance Assessment (CBN + NDPR)
+    6. Gap Analysis
+    7. Recommendations
+    8. Implementation Roadmap
+    9. Risk Matrix
+    10. Appendix (Regulatory Mapping)
+  expected_output: >
+    A complete professional report.
+    
